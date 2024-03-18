@@ -1,0 +1,8 @@
+class Solution:
+    def calPoints(self, operations: List[str]) -> int:
+        stack = []
+        for i in operations:
+            match(i):
+
+                case '+' :
+                    op1 = stack[-1]
