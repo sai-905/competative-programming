@@ -1,0 +1,14 @@
+import math
+class Solution:
+    def getDecimalValue(self, head: ListNode) -> int:
+        lst = []
+        while head:
+            lst.append(head.val)
+            head = head.next 
+        dec = 0
+        length = 0
+        while lst:
+            dec = dec + math.pow(2,length)*lst.pop()
+            length+=1
+        return int(dec)
+        
